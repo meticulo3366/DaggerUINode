@@ -1,0 +1,70 @@
+<div class="page-header">
+  <h1>Summary</h1>
+</div>
+
+<div class="alert alert-danger" ng-show="error.hasError">
+  <p>{{error.message}}</p>
+</div>
+
+<div class="row" ng-show="!error.hasError">
+  <div class="col-md-4">
+    <h2>Today's Indicators</h2>
+    <dl class="dl">
+      <dt>{{tallies.latest.count.total}}</dt>
+      <dd>publications to date, where:</dd>
+      <dt>{{tallies.latest.count.acceptable / tallies.latest.count.total * 100 | number}}%</dt>
+      <dd>are acceptable (conform to all criteria)</dd>
+      <dt>{{tallies.latest.count.fulltext / tallies.latest.count.total * 100 |number}}%</dt>
+      <dd>have a locatable full text</dd>
+      <dt>{{tallies.latest.count.license / tallies.latest.count.total * 100 |number}}%</dt>
+      <dd>have an agreeable license</dd>
+      <dt>{{tallies.latest.count.archive / tallies.latest.count.total * 100 |number}}%</dt>
+      <dd>have a suitable archive arrangement</dd>
+    </dl>
+  </div>
+  <div class="col-md-8">
+    <h2>Key Performance Indicators - History</h2>
+      <div id="kpi-history-chart" style="height: 400px;">
+	<svg></svg>
+      </div>
+  </div>
+</div>
+
+<h2>Key Performance Indicators - Breakdown</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <h4>Agreeable License</h4>
+  </div>
+  <div class="col-md-4">
+    <h4>Locatable Fulltext</h4>
+  </div>
+  <div class="col-md-4">
+    <h4>Suitable Archive Arrangement</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div id="license-breakdown-chart">
+      <svg></svg>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div id="fulltext-breakdown-chart">
+      <svg></svg>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div id="archive-breakdown-chart">
+      <svg></svg>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Publishers</h2>
+
+  <div id="publisher-charts">
+  </div>
+</div>

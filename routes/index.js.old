@@ -1,0 +1,31 @@
+var express = require('express');
+var router = express.Router();
+
+/* nsf  usdhhs  usdoa  usdod  usdoe  */
+
+/* GET home page. */
+router.get('/', function(req, res) {
+  res.render('index', { title: "try /nsf/" });
+});
+
+router.get('/nsf', function(req, res) {
+  res.render('agency', { datasource: "var serviceUrl = \'http://localhost:9293\'" });
+});
+
+router.get('/usdhhs', function(req, res) {
+  res.render('agency', { datasource: "var serviceUrl = \'http://localhost:9294\'" });
+});
+
+router.get('/usdoa', function(req, res) {
+  res.render('agency', { datasource: "var serviceUrl = \'http://localhost:9295\'" });
+});
+
+router.get('/usdod', function(req, res) {
+  res.render('agency', { datasource: "var serviceUrl = \'http://localhost:9296\'" });
+});
+
+router.get('/usdoe', function(req, res) {
+  res.render('agency', { datasource: "var serviceUrl = \'http://localhost:9297\'" });
+});
+
+module.exports = router;

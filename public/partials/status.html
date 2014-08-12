@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1>Data Collection History</h1>
+</div>
+
+<div ng-show="error.hasError">
+  <div class="alert alert-danger">
+    <p>{{error.message}}</p>
+  </div>
+</div>
+
+<div ng-show="!error.hasError">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+	<th>Date</th>
+	<th>Result</th>
+	<th>Error Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="collection in collections">
+	<td>{{collection.at | date:'medium'}}</td>
+	<td ng-show="collection.success">
+	  <span class="label label-success">Completed</span>
+	</td>
+	<td ng-show="!collection.success">
+	  <span class="label label-danger">Failed</span>
+	</td>
+	<td>
+	  <span ng-if="collection.http_code">{{collection.http_code}}</span>
+	</td>
+      </tr>
+    </tbody>
+  </table>
+<div>

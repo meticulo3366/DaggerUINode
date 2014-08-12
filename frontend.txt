@@ -1,0 +1,29 @@
+{ ipv4: '54.210.237.67' }
+[90mGET /nsf [32m200 [90m4798ms - 3.86kb[0m
+[90mGET /css/bootstrap.min.css [32m200 [90m11ms - 95.06kb[0m
+[90mGET /css/bootstrap-theme.min.css [36m304 [90m4ms[0m
+[90mGET /css/nv.d3.css [36m304 [90m2ms[0m
+[90mGET /css/jquery.dataTables.css [36m304 [90m1ms[0m
+[90mGET /css/main.css [36m304 [90m1ms[0m
+[90mGET /js/vendor/modernizr-2.6.2-respond-1.1.0.min.js [36m304 [90m1ms[0m
+[90mGET /nsf [32m200 [90m148ms - 3.86kb[0m
+[90mGET /js/vendor/bootstrap.min.js [36m304 [90m5ms[0m
+[90mGET /js/vendor/angular.min.js [36m304 [90m4ms[0m
+[90mGET /js/vendor/d3.v3.js [36m304 [90m4ms[0m
+[90mGET /js/vendor/nv.d3.min.js [36m304 [90m4ms[0m
+[90mGET /js/vendor/datatables.min.js [36m304 [90m3ms[0m
+[90mGET /css/bootstrap.min.css [36m304 [90m2ms[0m
+[90mGET /css/bootstrap-theme.min.css [36m304 [90m1ms[0m
+[90mGET /css/nv.d3.css [36m304 [90m2ms[0m
+[90mGET /css/main.css [36m304 [90m1ms[0m
+[90mGET /css/jquery.dataTables.css [36m304 [90m2ms[0m
+[90mGET /js/vendor/bootstrap.min.js [36m304 [90m1ms[0m
+[90mGET /js/vendor/modernizr-2.6.2-respond-1.1.0.min.js [36m304 [90m2ms[0m
+[90mGET /js/vendor/angular.min.js [36m304 [90m3ms[0m
+[90mGET /js/main.js [36m304 [90m4ms[0m
+[90mGET /js/vendor/nv.d3.min.js [36m304 [90m1ms[0m
+[90mGET /js/vendor/d3.v3.js [36m304 [90m2ms[0m
+[90mGET /js/vendor/datatables.min.js [36m304 [90m1ms[0m
+[90mGET /js/main.js [36m304 [90m1ms[0m
+[90mGET /partials/summary.html [36m304 [90m1ms[0m
+[90mGET /partials/summary.html [36m304 [90m1ms[0m
