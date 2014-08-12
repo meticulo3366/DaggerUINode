@@ -17,29 +17,36 @@ module.exports = function(app){
 	});
 
 	router.get('/nsf', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/nsf_data\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/nsf\'" });
 	});
 
 	router.get('/usdhhs', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/usdhhs_data\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdhhs\'" });
 	});
 
 	router.get('/usdoa', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/usdoa_data\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoa\'" });
 	});
 
 	router.get('/usdod', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/usdod_data\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdod\'" });
 	});
 
 	router.get('/usdoe', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/usdoe_data\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoe\'" });
 	});
 
-        router.get('/usdoi', function(req, res) {
-          res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/usdoi_data\'" });
-        });
+    router.get('/usdoi', function(req, res) {
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoi\'" });
+    });
 
+    router.get('/usaid', function(req, res) {
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usaid\'" });
+    });
+
+    router.get('/smithsonian', function(req, res) {
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/smithsonian\'" });
+    });
 
 	return  router;
 }
