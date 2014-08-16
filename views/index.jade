@@ -1,17 +1,17 @@
 doctype html
 //if lt IE 7
-  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(ng-app='daggerApp', ng-controller='brandingCtrl')  
 //if IE 7
-  html.no-js.lt-ie9.lt-ie8  
+  html.no-js.lt-ie9.lt-ie8(ng-app='daggerApp', ng-controller='brandingCtrl')  
 //if IE 8
-  html.no-js.lt-ie9  
+  html.no-js.lt-ie9(ng-app='daggerApp', ng-controller='brandingCtrl')  
 // [if gt IE 8] <!
-html.no-js
+html.no-js(ng-app='daggerApp', ng-controller='brandingCtrl')
   // <![endif]
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title CHORUS Dashboards
+    title {{branding.title}}
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width')
     link(href='apple-touch-icon-57x57.png', rel='apple-touch-icon', sizes='57x57')
@@ -27,18 +27,13 @@ html.no-js
     link(href='favicon-96x96.png', rel='icon', sizes='96x96', type='image/png')
     link(href='favicon-16x16.png', rel='icon', sizes='16x16', type='image/png')
     link(href='favicon-32x32.png', rel='icon', sizes='32x32', type='image/png')
-    meta(content='#2b5797', name='msapplication-TileColor')
-    meta(content='/mstile-144x144.png', name='msapplication-TileImage')
-    link(rel='stylesheet', href='css/bootstrap.min.css')
-    style.
-      body {
-      padding-top: 50px;
-      padding-bottom: 20px;
-      }
-    link(rel='stylesheet', href='css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='css/main.css')
-    link(rel='stylesheet', href='css/jumbotron-narrow.css')
-    script(src='js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')
+    link(rel='stylesheet', href='landing/css/bootstrap.min.css')
+    link(rel='stylesheet', href='landing/css/main.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    script(src='landing/js/modernizr-2.6.2-respond-1.1.0.min.js')
+    script(src='landing/js/jquery.min.js')
+    script(src='landing/js/bootstrap.min.js')
   body
     //if lt IE 7
       p.chromeframe
@@ -52,8 +47,7 @@ html.no-js
     .container
       .header
         h3.text-muted(style='font-size: 3em;')
-          img(src='images/chorus.png', style='height: 1.6em;')
-          |  Dashboards
+          img(src='landing/images/chorus.png', style='height: 1.6em;')
       .row.marketing
         .jumbotron
           p.lead
@@ -78,7 +72,7 @@ html.no-js
             a(href='usdoi') U.S. Department of Interior
       .footer
         p
-          a(href='http://chorusaccess.org/contact-us') Leave feedback
+          a.feedback(href='http://chorusaccess.org/contact-us') Leave feedback
     // /container
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
     script.

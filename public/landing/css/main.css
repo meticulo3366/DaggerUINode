@@ -1,0 +1,210 @@
+/* CSS for Chorus Search & Dashboards */
+
+a, a:visited {
+  color: rgb(88, 83, 168);
+  font-family: 'Montserrat', sans-serif;
+}
+a:hover {
+  color: rgb(88, 83, 168);
+}
+.notification {
+  font-size: 20px;
+  line-height: 25px;
+}
+.notification li {
+  line-height: 20px;
+}
+.search {
+  margin-top: 2em;
+  position: relative;
+}
+.search i {
+  position: absolute;
+  top: 0.25em;
+  left: 0.3em;
+  font-size: 2.8em;
+  color: #aaa;
+}
+.search input {
+  padding-left: 1.5em;
+  line-height: 1.2em;
+  height: 1.4em;
+  font-size: 2.5em;
+  width: 20em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.row-centered {
+  margin: 0 auto;
+  width: 703px;
+}
+#help-accordion {
+  margin-top: 2em;
+  margin-left: -2px;
+}
+.break-below {
+  margin-bottom: 6em;
+}
+.right-aligned {
+  float: right;
+}
+.home-link, .home-link:visited, .home-link:hover {
+  text-decoration: none;
+  color: black;
+}
+.simple-nav {
+  font-size: 1.2em;
+  line-height: 1.1em;
+  margin-top: 1em;
+}
+.simple-nav a, .simple-nav a:visited {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(88,83,168);
+  padding-left: .4em;
+}
+.search-in-header {
+  position: relative;
+  margin-top: .5em;
+  margin-right: 16em;
+  width: 22em;
+}
+.search-in-header i {
+  position: absolute;
+  top: 0.35em;
+  left: 0.5em;
+  font-size: 1.8em;
+  color: #aaa;
+}
+.search-in-header input {
+  line-height: 1.2em;
+  height: 1.4em;
+  font-size: 1.6em;
+  width: 22em;
+  padding-left: 2em;
+}
+a.home-link img {
+  width: 175px;
+}
+
+.span-header {
+  margin-top: 1.2em;
+  margin-bottom: -1.3em;
+}
+
+.simple-nav-outer {
+  position: relative;
+  width: 45em;
+}
+.simple-nav-bump-up {
+  margin-top: -1em;
+}
+.simple-nav {
+  position: absolute;
+  height: 2em;
+  top: 50%;
+  margin-top: 1em;
+  right: 0;
+}
+.simple-nav .pull-right {
+  margin-top: -0.05em;
+}
+.simple-nav .pull-right img {
+  margin-top: -0.2em;
+}
+.simple-nav > * {
+  margin-left: .4em;
+}
+.simple-nav.smaller {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.accordion-inner{
+  font-family: 'Open Sans', sans-serif;
+}
+
+dl, dd, dt{
+  line-height: 1.6em;
+}
+dd{
+  color: rgb(77,98,110);
+  margin-bottom: 0.4em;
+}
+
+span.twitter-typehead{
+  position: relative; 
+  display: inline-block; 
+  direction: ltr;
+}
+span.tt-dropdown-menu{
+  position: absolute; 
+  top: 100%; 
+  left: 0px; 
+  z-index: 100; 
+  display: none; 
+  right: auto;
+}
+input.tt-hint{
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  border-color: transparent; 
+  box-shadow: none; 
+  background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+}
+input.tt-input{
+  position: relative; 
+  vertical-align: top; 
+  background-color: transparent;
+}
+pre.tt{
+  position: absolute; 
+  visibility: hidden; 
+  white-space: pre; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-size: 33px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  word-spacing: 0px; 
+  letter-spacing: 0px; 
+  text-indent: 0px; 
+  text-rendering: auto; 
+  text-transform: none;
+}
+
+.betaContent{
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 10px 10px 10px;
+  color: rgb(77,98,110);
+}
+.betaHead{
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(88,83,168);
+
+}
+.beta{
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-align: justify;
+}
+.fed{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(77,98,110);
+}
+.feedback{
+  font-size: 13px;
+}
+#search-input:focus{
+  border-color: rgb(88,83,168);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(88, 83, 168, 1);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(88, 83, 168, 1)
+}
+
+
