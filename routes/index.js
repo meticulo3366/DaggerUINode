@@ -17,35 +17,35 @@ module.exports = function(app){
 	});
 
 	router.get('/nsf', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/nsf\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/nsf\'", title:"NSF" });
 	});
 
 	router.get('/usdhhs', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdhhs\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdhhs\'", title:"USDHHS" });
 	});
 
 	router.get('/usdoa', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoa\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoa\'", title:"USDOA" });
 	});
 
 	router.get('/usdod', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdod\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdod\'", title:"USDOD" });
 	});
 
 	router.get('/usdoe', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoe\'" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoe\'", title:"USDOE" });
 	});
 
     router.get('/usdoi', function(req, res) {
-      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoi\'" });
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoi\'", title:"USDOI" });
     });
 
     router.get('/usaid', function(req, res) {
-      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usaid\'" });
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usaid\'", title:"USAID" });
     });
 
     router.get('/smithsonian', function(req, res) {
-      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/smithsonian\'" });
+      res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/smithsonian\'", title:"Smithsonian" });
     });
 
 	return  router;
