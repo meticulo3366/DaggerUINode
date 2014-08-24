@@ -20,12 +20,16 @@ module.exports = function(app){
 	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/nsf\'", title:"NSF" });
 	});
 
+        router.get('/nist', function(req, res) {
+          res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/nist\'", title:"NIST" });
+        });
+
 	router.get('/usdhhs', function(req, res) {
 	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdhhs\'", title:"USDHHS" });
 	});
 
 	router.get('/usdoa', function(req, res) {
-	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoa\'", title:"USDOA" });
+	  res.render('agency', { datasource: "var serviceUrl = \'http://"+ipv4+"/data/usdoa\'", title:"USDA" });
 	});
 
 	router.get('/usdod', function(req, res) {
